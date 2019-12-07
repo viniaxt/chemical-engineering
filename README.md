@@ -12,9 +12,9 @@ By the fact that I think that chemical engineering is way more than just repetit
 
 ### Flash vaporization
 
-![](./flash-vaporization/assets/flash-vaporization.png)
+![](./flash-vaporization/assets/flash-vaporization.PNG)
 
-![](./flash-vaporization/assets/vaporizaton-example.png)
+![](./flash-vaporization/assets/vaporizaton-example.PNG)
 
 #### REMEMBER!
 > xi => composition of liquid flow rate 
