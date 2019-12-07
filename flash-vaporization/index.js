@@ -3,85 +3,40 @@
  * Find out flow rate and compositions for a chosen temperature
 */
 
-// theoric class question
-// const feedComposition = [
-//   {
-//     i: 1,
-//     isMostVolatile: false,
-//     fraction: 0.06,
-//     a: 6.85802,
-//     b: 819.296,
-//     c: 248.733
-//   },
-//   {
-//     i: 2,
-//     isMostVolatile: false,
-//     fraction: 0.63,
-//     a: 7.01493,
-//     b: 1316.554,
-//     c: 237.569
-//   },
-//   {
-//     i: 3,
-//     isMostVolatile: true,
-//     fraction: 0.31,
-//     a: 6.83410,
-//     b: 1276.415,
-//     c: 221.949
-//   }
-// ]
-
-// question 14
+// Change Here!!
+/**
+ *
+ * Structure example - add as many as you want 
+{
+  i: 1,
+  fraction: 0.30,
+  a: 6.87776,
+  b: 1171.53,
+  c: 222.366
+}
+ */
 const feedComposition = [
   {
     i: 1,
-    isMostVolatile: false,
-    fraction: 0.3,
-    a: 6.83029,
-    b: 945.90,
-    c: 240.000
-  },
-  {
-    i: 2,
-    isMostVolatile: false,
-    fraction: 0.4,
-    a: 6.85221,
-    b: 1064.63,
-    c: 232.000
-  },
-  {
-    i: 3,
-    isMostVolatile: true,
-    fraction: 0.30,
+    fraction: 0.7,
     a: 6.87776,
     b: 1171.53,
     c: 222.366
-  }
+  },
+  {
+    i: 2,
+    fraction: 0.30,
+    a: 6.95087,
+    b: 1342.310,
+    c: 219.120
+  },
+  //
+  // Add another structure here!!
+  //
 ]
-const operationPressure = 7 * 760// mmHg
-const operationTemperature = 106 // ºC
+const operationPressure = 1 * 760// mmHg
+const operationTemperature = 80 // ºC
 
-// question 12
-// const feedComposition = [
-//   {
-//     i: 1,
-//     isMostVolatile: false,
-//     fraction: 0.70,
-//     a: 6.85146,
-//     b: 1206.470,
-//     c: 223.130
-//   },
-//   {
-//     i: 2,
-//     isMostVolatile: false,
-//     fraction: 0.30,
-//     a: 6.95087,
-//     b: 1342.310,
-//     c: 219.120
-//   }
-// ]
-// const operationPressure = 1 * 760// mmHg
-// const operationTemperature = 89 // ºC
 
 console.time("Performance")
 console.log("    --- Operation conditions ---")
@@ -203,3 +158,83 @@ function boilingTemperature(feed, operationPressure) {
   }
   return temperatures
 }
+
+// --- EXAMPLES ---
+
+/**
+1 - theoric class question
+
+const feedComposition = [
+  {
+    i: 1,
+    fraction: 0.06,
+    a: 6.85802,
+    b: 819.296,
+    c: 248.733
+  },
+  {
+    i: 2,
+    fraction: 0.63,
+    a: 7.01493,
+    b: 1316.554,
+    c: 237.569
+  },
+  {
+    i: 3,
+    fraction: 0.31,
+    a: 6.83410,
+    b: 1276.415,
+    c: 221.949
+  }
+]
+
+2 - question 12
+
+const feedComposition = [
+  {
+    i: 1,
+    fraction: 0.70,
+    a: 6.85146,
+    b: 1206.470,
+    c: 223.130
+  },
+  {
+    i: 2,
+    fraction: 0.30,
+    a: 6.95087,
+    b: 1342.310,
+    c: 219.120
+  }
+]
+const operationPressure = 1 * 760// mmHg
+const operationTemperature = 89 // ºC
+
+3 - question 14
+
+const feedComposition = [
+  {
+    i: 1,
+    fraction: 0.3,
+    a: 6.83029,
+    b: 945.90,
+    c: 240.000
+  },
+  {
+    i: 2,
+    fraction: 0.4,
+    a: 6.85221,
+    b: 1064.63,
+    c: 232.000
+  },
+  {
+    i: 3,
+    fraction: 0.30,
+    a: 6.87776,
+    b: 1171.53,
+    c: 222.366
+  }
+]
+const operationPressure = 7 * 760// mmHg
+const operationTemperature = 106 // ºC
+
+*/
