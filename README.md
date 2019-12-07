@@ -5,8 +5,8 @@ By the fact that I think that chemical engineering is way more than just repetit
 ✌️✌️
 
 ## index
-1. [Functions](##Functions)
-2. [Tutorial](##How-can-I-use-this??-wtf???)
+1. [Functions](#Functions)
+2. [Tutorial](#How-can-I-use-this??-wtf???)
 
 ## Functions
 
